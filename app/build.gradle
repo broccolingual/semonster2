@@ -35,6 +35,6 @@ application {
     mainClass = 'org.example.App'
 }
 
-tasks.withType(javaCompile) {
+tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
 }
