@@ -8,7 +8,9 @@ import static org.junit.Assert.*;
 
 public class MonsterTest {
     @Test public void testMonster() {
-        Monster classUnderTest = new Monster("OIT", 3);
+        Monster classUnderTest = new Monster();
+        classUnderTest.name="OIT";
+        classUnderTest.rare=3;
         assertEquals("OIT:レア度[3]", classUnderTest.toString());
     }
 }
