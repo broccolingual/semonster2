@@ -15,7 +15,8 @@ public class PlayerTest {
         classUnderTest.setName("yamada");
         classUnderTest.drawMonsters(monsterIds, rareIds);
 
-        String expectedContent = "Deck: yamada\n" +
+        String expectedContent = "hp: 100\n" +
+        "Deck: yamada\n" +
         "スライム:レア度[1]\n" +
         "サハギン:レア度[2]\n" +
         "ドラゴン:レア度[3]\n" +

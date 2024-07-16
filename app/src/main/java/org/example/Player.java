@@ -9,6 +9,16 @@ import java.util.ArrayList;
 public class Player {
   ArrayList<Monster> deck = new ArrayList<>();
   String name;
+  int hp;
+
+  Player() {
+    this.hp=100;
+  }
+
+  Player(String name) {
+    this.name = name;
+    this.hp=100;
+  }
 
   public void setName(String name) {
     this.name = name;
@@ -28,6 +38,7 @@ public class Player {
 
   public String toString() {
     StringBuilder sb = new StringBuilder();
+    sb.append("hp: ").append(this.hp).append("\n");
     sb.append("Deck: ").append(this.name).append("\n");
     for (Monster m : this.deck) {
         sb.append(m).append("\n");
