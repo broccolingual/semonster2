@@ -17,11 +17,11 @@ public class PlayerTest {
 
         String expectedContent = "hp: 100\n" +
         "Deck: yamada\n" +
-        "スライム:レア度[1]\n" +
-        "サハギン:レア度[2]\n" +
-        "ドラゴン:レア度[3]\n" +
-        "デュラハン:レア度[4]\n" +
-        "シーサーペント:レア度[5]\n";
+        "スライム:レア度[1],HP[100]\n" +
+        "サハギン:レア度[2],HP[100]\n" +
+        "ドラゴン:レア度[3],HP[100]\n" +
+        "デュラハン:レア度[4],HP[100]\n" +
+        "シーサーペント:レア度[5],HP[100]\n";
 
 
         assertEquals(expectedContent, classUnderTest.toString());

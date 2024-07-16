@@ -11,6 +11,6 @@ public class MonsterTest {
         Monster classUnderTest = new Monster();
         classUnderTest.name="OIT";
         classUnderTest.rare=3;
-        assertEquals("OIT:レア度[3]", classUnderTest.toString());
+        assertEquals("OIT:レア度[3],HP[100]", classUnderTest.toString());
     }
 }
