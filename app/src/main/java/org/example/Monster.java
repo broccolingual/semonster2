@@ -8,16 +8,19 @@ import java.util.Random;
 public class Monster {
     String name;
     int rare;// 1:normal,2:uncommon,3:rare,4:ultra rare
+    int hp;
   
     Monster() {
       Random random = new Random();
       this.name = this.summonMonster(random.nextInt(5));
       this.rare = random.nextInt(5);
+      this.hp = 100;
     }
 
     Monster(int number,int rare) {
       this.name = this.summonMonster(number);
       this.rare = rare;
+      this.hp = 100;
     }
   
     String summonMonster(int mnumber) {
@@ -27,7 +30,6 @@ public class Monster {
   
     @Override
     public String toString() {
-  
-      return this.name + ":レア度[" + this.rare + "]";
+      return this.name + ":レア度[" + this.rare + "],HP[" + this.hp + "]";
     }
   }
