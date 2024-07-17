@@ -20,6 +20,11 @@ public class Player {
     this.hp=100;
   }
 
+  Player(String name, int hp){
+    this.name = name;
+    this.hp = hp;
+  }
+
   public void setName(String name) {
     this.name = name;
   }

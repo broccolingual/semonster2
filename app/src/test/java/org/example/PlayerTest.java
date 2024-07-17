@@ -8,14 +8,13 @@ import static org.junit.Assert.*;
 
 public class PlayerTest {
     @Test public void testplayer() {
-        Player classUnderTest = new Player();
+        Player classUnderTest = new Player("yamada", 50);
 
         int[] monsterIds = {0, 1, 2, 3, 4};
         int[] rareIds = {1, 2, 3, 4, 5};
-        classUnderTest.setName("yamada");
         classUnderTest.drawMonsters(monsterIds, rareIds);
 
-        String expectedContent = "hp: 100\n" +
+        String expectedContent = "hp: 50\n" +
         "Deck: yamada\n" +
         "スライム:レア度[1],HP[100]\n" +
         "サハギン:レア度[2],HP[100]\n" +
