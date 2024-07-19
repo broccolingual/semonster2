@@ -8,19 +8,20 @@ import static org.junit.Assert.*;
 
 public class PlayerTest {
     @Test public void testplayer() {
-        Player classUnderTest = new Player("yamada", 50);
+        Player classUnderTest = new Player("yamada", 100);
 
         int[] monsterIds = {0, 1, 2, 3, 4};
         int[] rareIds = {1, 2, 3, 4, 5};
         classUnderTest.drawMonsters(monsterIds, rareIds);
 
-        String expectedContent = "hp: 50\n" +
+        String expectedContent = "hp: 100\n" +
         "Deck: yamada\n" +
-        "スライム:レア度[1],HP[100]\n" +
-        "サハギン:レア度[2],HP[100]\n" +
-        "ドラゴン:レア度[3],HP[100]\n" +
-        "デュラハン:レア度[4],HP[100]\n" +
-        "シーサーペント:レア度[5],HP[100]\n";
+        "attack: 20\n" +
+        "スライム:レア度[1],HP[100],攻撃力[10]\n" +
+        "サハギン:レア度[2],HP[100],攻撃力[10]\n" +
+        "ドラゴン:レア度[3],HP[100],攻撃力[10]\n" +
+        "デュラハン:レア度[4],HP[100],攻撃力[10]\n" +
+        "シーサーペント:レア度[5],HP[100],攻撃力[10]\n";
 
 
         assertEquals(expectedContent, classUnderTest.toString());

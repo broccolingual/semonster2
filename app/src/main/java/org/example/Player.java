@@ -10,19 +10,23 @@ public class Player {
   ArrayList<Monster> deck = new ArrayList<>();
   String name;
   int hp;
+  int attack;
 
   Player() {
     this.hp=100;
+    this.attack=20;
   }
 
   Player(String name) {
     this.name = name;
     this.hp=100;
+    this.attack=20;
   }
 
   Player(String name, int hp){
     this.name = name;
     this.hp = hp;
+    this.attack=20;
   }
 
   public void setName(String name) {
@@ -45,6 +49,7 @@ public class Player {
     StringBuilder sb = new StringBuilder();
     sb.append("hp: ").append(this.hp).append("\n");
     sb.append("Deck: ").append(this.name).append("\n");
+    sb.append("attack: ").append(this.attack).append("\n");
     for (Monster m : this.deck) {
         sb.append(m).append("\n");
     }
